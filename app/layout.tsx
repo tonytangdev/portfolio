@@ -1,5 +1,5 @@
 // These styles apply to every route in the application
-import Image from "next/image";
+import { Navbar } from "../components/Navbar";
 import "./globals.css";
 
 export default function RootLayout({
@@ -8,10 +8,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
-      <body className="h-screen bg-bg">
-        <nav>
-        </nav>
+    <html data-theme="forest" className="flex justify-center">
+      <body className="h-screen max-w-screen-lg ">
+        <Navbar />
         <div>{children}</div>
       </body>
     </html>

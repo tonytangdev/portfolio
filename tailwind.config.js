@@ -6,14 +6,8 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        primary: "#119AB2",
-        secondary: "#06D6A0",
-        accent: "#EF476F",
-        bg: "#073B4C",
-      },
-    },
+    extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: ["garden", "forest"],
 };
