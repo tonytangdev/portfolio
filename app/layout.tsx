@@ -8,10 +8,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html data-theme="forest" className="flex justify-center">
-      <body className="h-screen max-w-screen-lg w-screen">
+    <html data-theme="light" className="flex justify-center">
+      <body className="">
         <Navbar />
-        <div className="p-4">{children}</div>
+        <div className="w-screen">{children}</div>
       </body>
     </html>
   );

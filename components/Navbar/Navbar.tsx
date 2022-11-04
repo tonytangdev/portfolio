@@ -19,7 +19,7 @@ const Navbar = (props: Props) => {
   };
 
   return (
-    <nav className="relative">
+    <nav className="max-w-screen-lg w-screen mx-auto">
       <div className="navbar bg-base-100 flex sm:justify-between">
         <div className="flex-1 sm:flex-none">
           <a className="btn btn-ghost normal-case text-xl">Tony Tang</a>
@@ -69,8 +69,8 @@ const Navbar = (props: Props) => {
       </div>
       <ul
         className={`${
-          menuIsOpen ? "block" : "hidden"
-        } menu bg-base-100 w-full sm:hidden absolute`}
+          menuIsOpen ? "absolute" : "hidden"
+        } menu bg-base-100 w-full sm:hidden `}
       >
         <Links links={links} />
       </ul>
