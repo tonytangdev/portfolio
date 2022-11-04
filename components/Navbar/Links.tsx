@@ -8,7 +8,7 @@ const Links = ({ links }: Props) => {
   return (
     <>
       {links.map(({ title, link }) => (
-        <li>
+        <li key={title}>
           <a href={link} className={`${title === "About" && "active"} mx-1.5`}>
             {title}
           </a>
